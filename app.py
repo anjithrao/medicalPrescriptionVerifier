@@ -42,8 +42,8 @@ sys.path.insert(0, "crnn-pytorch")
 from correct import correct, DICTIONARY
 
 reader = easyocr.Reader(["en"], gpu=torch.cuda.is_available())
-processor = TrOCRProcessor.from_pretrained("./trocr_best")
-model = VisionEncoderDecoderModel.from_pretrained("./trocr_best")
+processor = TrOCRProcessor.from_pretrained("Anji-th/prescription-trocr")
+model = VisionEncoderDecoderModel.from_pretrained("Anji-th/prescription-trocr")
 model.eval()
 if torch.cuda.is_available():
     model = model.cuda()
@@ -2202,5 +2202,10 @@ function copyList() {
 </html>'''
 
 
+
 if __name__ == "__main__":
-    app.run(debug=False, port=5000)
+    app.run(
+        host="0.0.0.0",
+        port=7860,
+        debug=False
+    )
