@@ -1,0 +1,16 @@
+torch==2.5.1
+torchvision==0.20.1
+transformers==5.5.0
+accelerate
+sentencepiece
+tf-keras
+pillow
+numpy
+opencv-python
+lmdb
+rapidfuzz
+easyocr
+flask
+requests
+matplotlib
+editdistance

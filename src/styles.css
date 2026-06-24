@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: #0a0e17;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: #0a0e17;
+  color: #f0f4f8;
+  font-family: "DM Sans", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.leaflet-container {
+  background: #0a0e17;
+  color: #f0f4f8;
+}
